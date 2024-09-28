@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>TAREAS</h1>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>NOMBRE</th>
+                <th>DURACION</th>
+                <th>ACCIONES</th>
+            </tr>
+        </thead>
+        <tbody id="tareas">
+            <!-- La lista de comentarios se llenará dinámicamente aquí -->
+        </tbody>
+    </table>
+
+    <div id="deleteDialog" class="dialog-overlay" style="display: none;">
+        <div class="dialog-content">
+            <p>¿Está seguro que desea eliminar este comentario?</p>
+            <div class="dialog-buttons">
+                <button id="confirmDelete">Aceptar</button>
+                <button id="cancelDelete">Cancelar</button>
+            </div>
+        </div>
+    </div>
+    <div class="container"><button id="botoncerrar">Cerrar sesión</button></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
